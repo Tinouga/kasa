@@ -5,52 +5,8 @@
   flex-direction: column;
   gap: 2.688rem;
 
-  > header {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 13.938rem;
-    border-radius: 1.563rem;
-    padding: 1rem;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.6);
-      pointer-events: none;
-      border-radius: 1.563rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      color: white;
-      z-index: 1;
-    }
-  }
-
   @include mobile {
     gap: 1.38rem;
-
-    > header {
-      height: 6.938rem;
-      justify-content: flex-start;
-      border-radius: 0.625rem;
-
-      &::before {
-        border-radius: 0.625rem;
-      }
-
-      h1 {
-        font-size: 1.5rem;
-        width: 14.063rem;
-      }
-    }
   }
 }
 

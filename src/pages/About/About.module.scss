@@ -1,0 +1,14 @@
+@use "../../styles/mixins" as *;
+
+.about {
+  display: flex;
+    flex-direction: column;
+    gap: 2.37rem;
+}
+
+.collapseContainer {
+  display: flex;
+    flex-direction: column;
+    gap: 1.88rem;
+    padding: 0 6.78rem;
+}

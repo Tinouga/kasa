@@ -1,4 +1,4 @@
-@use "../../styles/mixins" as *;
+@use "./styles/mixins" as *;
 
 // Reset
 :global {
@@ -13,8 +13,15 @@
   }
 }
 
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
 .mainContainer {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 3.125rem;
   padding: 2.813rem 6.25rem;

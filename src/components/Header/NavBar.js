@@ -12,7 +12,7 @@ const NavBar = () => (
             {navItems.map((item, index) => (
                 <li key={index}>
                     <NavLink
-                        className={({isActive}) => isActive && styles.active}
+                        className={({isActive}) => isActive ? styles.active : undefined }
                         to={item.path}>
                         {item.label}
                     </NavLink>
