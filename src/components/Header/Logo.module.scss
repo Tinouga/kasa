@@ -1,0 +1,11 @@
+@use "../../styles/mixins" as *;
+
+.logo {
+  img {
+    height: 4.25rem;
+
+    @include mobile {
+      height: 2.93rem;
+    }
+  }
+}

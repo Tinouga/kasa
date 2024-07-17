@@ -1,0 +1,30 @@
+@use "../../styles/mixins" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.12rem 0 1.81rem 0;
+  gap: 1.78rem;
+  background: black;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  @include mobile {
+    padding: 4.125rem 0 3.60263rem 0;
+    gap: 0.81rem;
+
+    p {
+      width: 6.25rem;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.logo img {
+  height: 2.46525rem;
+}
