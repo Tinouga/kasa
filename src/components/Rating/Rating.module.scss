@@ -1,0 +1,26 @@
+@use "../../styles/mixins" as *;
+
+.rating {
+  display: flex;
+  gap: 0.125rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  width: 2.25rem;
+  height: 2.25rem;
+
+  @include mobile {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  &.full {
+    fill: #FF6060;
+  }
+
+  &.empty {
+    fill: #E3E3E3;
+  }
+}
