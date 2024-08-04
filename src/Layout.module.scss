@@ -32,6 +32,10 @@
     max-width: 1240px;
   }
 
+  @include tablet {
+    padding: 2rem 2.25rem;
+  }
+
   @include mobile {
     padding: 1.25rem 1.25rem 1.688rem 1.25rem;
     gap: 1.688rem;

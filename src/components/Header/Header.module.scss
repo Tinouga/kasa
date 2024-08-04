@@ -1,5 +1,45 @@
+@use "../../styles/mixins" as *;
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  img {
+    height: 4.25rem;
+
+    @include mobile {
+      height: 2.93rem;
+    }
+  }
+}
+
+.navbar {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 3.563rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  a.active {
+    text-decoration: underline;
+  }
+
+  @include mobile {
+    ul {
+      gap: 1.625rem;
+    }
+
+    a {
+      font-size: 0.75rem;
+    }
+  }
 }
